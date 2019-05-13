@@ -20,6 +20,8 @@
       <button @click="addItem">add</button>
     </div>
   </div>
+  
+  
 </template>
 
 <script>

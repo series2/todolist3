@@ -4,18 +4,18 @@
     <div v-for="task in tasks" :key="task.name">
       <div class="task" :class="{over500: task.price >= 500}">
         <div class="name">名前: {{ task.name }}</div>
-        <div class="price">{{ item.price }} 円</div>
+        <div class="price">{{ task.price }} 円</div>
         <div v-if="task.price >= 10000">高額商品</div>
       </div>
     </div>
      <div>
       <label>
         名前
-        <input type="text" v-model="newItemName">
+        <input type="text" v-model="newTaskName">
       </label>
       <label>
         価格
-        <input type="number" v-model="newItemPrice">
+        <input type="number" v-model="newTaskPrice">
       </label>
       <button @click="addTask">add</button>
     </div>

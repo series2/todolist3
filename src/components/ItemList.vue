@@ -8,6 +8,17 @@
         <div v-if="item.price >= 10000">高額商品</div>
       </div>
     </div>
+     <div>
+      <label>
+        名前
+        <input type="text" v-model="newItemName">
+      </label>
+      <label>
+        価格
+        <input type="number" v-model="newItemPrice">
+      </label>
+      <button @click="addItem">add</button>
+    </div>
   </div>
 </template>
 

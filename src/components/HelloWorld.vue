@@ -3,7 +3,7 @@
     <h1>{{ msg }}</h1>
     <counter />
     <item-list/>
-    <task-list/>
+    <to-do-List/>
   </div>
 </template>
 
@@ -43,3 +43,6 @@ a {
   color: #42b983;
 }
 </style>
+
+
+

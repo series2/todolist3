@@ -9,7 +9,7 @@
 
 <script>
 import Counter from "./Counter.vue";
-import ItemList from "./ItemList.vue";
+//import ItemList from "./ItemList.vue";
 import ToDoList from "./ToDoList.vue";
 
 export default {
@@ -19,7 +19,7 @@ export default {
   },
   components: {
     Counter,
-    ItemList,
+ //   ItemList,
     ToDoList
   }
 };

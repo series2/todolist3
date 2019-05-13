@@ -18,7 +18,8 @@ export default {
   },
   components: {
     Counter,
-    ItemList
+    ItemList,
+    ToDoList
   }
 };
 </script>

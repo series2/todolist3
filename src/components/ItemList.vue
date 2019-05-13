@@ -21,6 +21,24 @@
   </div>
 </template>
 
+<script>
+export default {
+  name: "ItemList",
+  data() {
+    return {
+      items: [{ name: "たまご", price: 100 }, { name: "りんご", price: 160 }],
+      newItemName: "",
+      newItemPrice: 0
+    };
+  },
+  methods: {
+    addItem() {
+      this.items.push({ name: this.newItemName, price: this.newItemPrice });
+    }
+  }
+};
+</script>
+
 <style>
 .over500 {
   color: red;

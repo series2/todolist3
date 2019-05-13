@@ -8,7 +8,7 @@
 
 <script>
 import Counter from "./Counter.vue";
-import ItemList from "./ItemList.vue;
+import ItemList from "./ItemList.vue";
 
 export default {
   name: "HelloWorld",
@@ -16,7 +16,7 @@ export default {
     msg: String
   },
   components: {
-    Counter
+    Counter,
     ItemList
   }
 };

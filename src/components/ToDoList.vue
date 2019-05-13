@@ -1,21 +1,20 @@
 <template>
   <div>
     <div>ToDoList</div>
-    <div v-for="task in tasks" :key="task.name">
-      <div class="task" :class="{over500: task.price >= 500}">
-        <div class="name">名前: {{ task.name }}</div>
-        <div class="price">{{ task.price }} 円</div>
-        <div v-if="task.price >= 10000">高額商品</div>
-      </div>
+     <div>unfinished</div>
+        <div v-for="task in tasks" :key="task.name">
+     
+        <div class="name">名前: {{ task.name }} 
+            <button @click="endTask">end</button></div>
+
     </div>
+
+    <div>finished</div>
+    
      <div>
       <label>
         名前
         <input type="text" v-model="newTaskName">
-      </label>
-      <label>
-        価格
-        <input type="number" v-model="newTaskPrice">
       </label>
       <button @click="addTask">add</button>
     </div>
@@ -26,19 +25,21 @@
 
 <script>
 export default {
+  
   name: "TaskList",
   data() {
     return {
-      tasks: [{ name: "たまご", price: 100 }, { name: "りんご", price: 160 }],
+      tasks: [{ name: "たまご"}, { name: "りんご"}],
       newTaskName: "",
-      newTaskPrice: 0
     };
   },
+  
   methods: {
     addTask() {
-      this.tasks.push({ name: this.newTaskName, price: this.newTaskPrice });
+      this.tasks.push({ name: this.newTaskName});
     }
   }
+
 };
 </script>
 

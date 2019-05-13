@@ -3,6 +3,7 @@
     <h1>{{ msg }}</h1>
     <counter />
     <item-list/>
+    <task-list/>
   </div>
 </template>
 

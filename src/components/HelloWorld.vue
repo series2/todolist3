@@ -2,8 +2,8 @@
   <div>
     <h1>{{ msg }}</h1>
     <counter />
-    <item-list/>
-    <to-do-List/>
+    <item-list />
+    <to-do-List />
   </div>
 </template>
 
@@ -19,7 +19,7 @@ export default {
   },
   components: {
     Counter,
- //   ItemList,
+    //   ItemList,
     ToDoList
   }
 };
